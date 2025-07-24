@@ -1,9 +1,11 @@
-
-const cajas = document.querySelectorAll('.checkbox');
+const poemaIframe = document.getElementById("poema");
+const cajas = document.querySelectorAll('.cajas');
 
 cajas.forEach(caja => {
   caja.addEventListener('change', () => {
     if (caja.checked) {
+      console.log(caja.id);
+      poemaIframe.src =caja.id;
       cajas.forEach(other => {
         if (other !== caja) other.checked = false;
       });
@@ -26,7 +28,7 @@ const imagenesGlitch = [
   'glitch/siempre.jpeg',
 ];
 
-  const imagenes = [
+const imagenes = [
     'reloj/maldades.jpeg',
     'reloj/juego_en_las_alturas.jpeg',
     'reloj/Dougie.jpeg',
@@ -76,7 +78,6 @@ agregarImagenes(imagenes);
 
 // Cambio con glitch
 const glitch = document.getElementById("cambio");
-const poemaIframe = document.getElementById("poema");
 
 glitch.addEventListener('change', () => {
   if (glitch.checked) {
@@ -122,83 +123,81 @@ const canciones = [
 'Tacomendaciones/Gaia.mp3',
 'Tacomendaciones/George Harrison-Give Me Love.mp3',
 'Tacomenaciones/Given Up.mp3',
-  /*'./Good Charlotte - I Just Wanna Live.mp3',
-'./i love you more than you will ever know.mp3',
-'./Is There Still Anything That Love Can Do.mp3',
-'./Jane Doe.mp3',
-"./Jason Mraz - I Won't Give Up.mp3",
-'./Je veux.mp3',
-'./Jeff Buckley - Hallelujah.mp3',
-'./Jónsi - Boy Lilikoi.mp3',
-'./Jónsi - Go Do.mp3',
-'./Kickapoo.mp3',
-'./La Costa del Silencio-Mägo de Oz.mp3',
-'./La gusana ciega - Tornasol.mp3',
-'./Ladrando a la luna.mp3',
-'./Last Nite - The Strokes.mp3',
-'./Life Goes On - August D.mp3',
-'./Life Goes On - BTS.mp3',
-'./Life Is Wonderful.mp3',
-'./Like a scent.mp3',
-'./Like Toy Soldiers.mp3',
-'./Lo Estoy Intentando.mp3',
-'./Louis Armstrong - La Vie En Rose.mp3',
-'./Louis Armstrong What A Wonderful World.mp3',
-'./Lucha De Gigantes.mp3',
-'./Lytos - Léelo del Revés.mp3',
-'./MAGO DE OZ  (CREO).mp3',
-'./Mägo de Oz - Hoy toca ser feliz.mp3',
-'./Mago de oz - La Rosa de los Vientos.mp3',
-'./Man in the Mirror.mp3',
-'./MC-solaar - la vie est belle.mp3',
-'./Mestizaje [CTM9vZSVZfc
-  ].mp3',
-'./Mikrocosmos.mp3',
-'./Mr. Curiosity.mp3',
-'./My Chemical Romance - SING.mp3',
-'./Nach - Gratis.mp3',
-'./NACH, QUIERO CONTARTE.mp3',
-'./Nanna - Disaster Master.mp3',
-'./Nanna - Godzilla.mp3',
-'./Nanna - Igloo.mp3',
-'./Nanna - Milk.mp3',
-'./Never Shout Never - first dance.mp3',
-'./New Radicals - You Get What You Give.mp3',
-'./Ob-La-Di, Ob-La-Da.mp3',
-'./Of Monsters And Men - Love Love Love.mp3',
-'./One Love Bob Marley.mp3',
-  "./One Ok Rock - Notes'n'Words.mp3",
-'./Porter Robinson ft. Amy Millan - Divinity.mp3',
-'./Qué Puedo Decir.mp3',
-'./Queen - Dont Stop Me Now.mp3',
-'./Queen - Love Of My Life.mp3',
-'./RADWIMPS - Kaiko.mp3',
-'./RADWIMPS - MAKAFUKA.mp3',
-'./RADWIMPS Kanata Haruka.mp3',
-'./RADWIMPS Utakata uta.mp3',
-'./Rusted Rood - Send me on my way.mp3',
-'./Scene Eight The Spirit Carries On.mp3',
-'./Sie7e - Tengo tu love.mp3',
-'./Sigur Rós - Ára Bátur.mp3',
-'./Sigur Ros - Glósóli.mp3',
-'./Sigur Ros - Hoppipolla.mp3',
-'./Solaar Pleure.mp3',
-  "./Stayin' Alive.mp3",
-'./Sticks & Stones.mp3',
-'./Stir It Up.mp3',
-'./The Final Countdown.mp3',
-'./The Long And Winding Road.mp3',
-'./This Is Home.mp3',
-'./Tipling Rock - Love Without a Reason.mp3',
-'./To the sky.mp3',
-'./Toploader - Dancing in the Moonlight.mp3',
-'./Trusty and True.mp3',
-'./un palido punto azul - Carl Sagan.mp3',
-'./Untitled #3 - sigur ros.mp3',
-'./Untitled #4 (Njósnavélin).mp3',
-'./Ven a mi Inuyasha.mp3',
-'./Will You Be There.mp3',
-'./Zaz - Port Coton.mp3', */
+ 'Tacomendaciones/Good Charlotte - I Just Wanna Live.mp3',
+'Tacomendaciones/i love you more than you will ever know.mp3',
+'Tacomendaciones/Is There Still Anything That Love Can Do.mp3',
+'Tacomendaciones/Jane Doe.mp3',
+"Tacomendaciones/Jason Mraz - I Won't Give Up.mp3",
+'Tacomendaciones/Je veux.mp3',
+'Tacomendaciones/Jeff Buckley - Hallelujah.mp3',
+'Tacomendaciones/Jónsi - Boy Lilikoi.mp3',
+'Tacomendaciones/Jónsi - Go Do.mp3',
+'Tacomendaciones/Kickapoo.mp3',
+'Tacomendaciones/La Costa del Silencio-Mägo de Oz.mp3',
+'Tacomendaciones/La gusana ciega - Tornasol.mp3',
+'Tacomendaciones/Ladrando a la luna.mp3',
+'Tacomendaciones/Last Nite - The Strokes.mp3',
+'Tacomendaciones/Life Goes On - August D.mp3',
+'Tacomendaciones/Life Goes On - BTS.mp3',
+'Tacomendaciones/Life Is Wonderful.mp3',
+'Tacomendaciones/Like a scent.mp3',
+'Tacomendaciones/Like Toy Soldiers.mp3',
+'Tacomendaciones/Lo Estoy Intentando.mp3',
+'Tacomendaciones/Louis Armstrong - La Vie En Rose.mp3',
+'Tacomendaciones/Louis Armstrong What A Wonderful World.mp3',
+'Tacomendaciones/Lucha De Gigantes.mp3',
+'Tacomendaciones/Lytos - Léelo del Revés.mp3',
+'Tacomendaciones/MAGO DE OZ  (CREO).mp3',
+'Tacomendaciones/Mägo de Oz - Hoy toca ser feliz.mp3',
+'Tacomendaciones/Mago de oz - La Rosa de los Vientos.mp3',
+'Tacomendaciones/Man in the Mirror.mp3',
+'Tacomendaciones/MC-solaar - la vie est belle.mp3',
+'Tacomendaciones/Mikrocosmos.mp3',
+'Tacomendaciones/Mr. Curiosity.mp3',
+'Tacomendaciones/My Chemical Romance - SING.mp3',
+'Tacomendaciones/Nach - Gratis.mp3',
+'Tacomendaciones/NACH, QUIERO CONTARTE.mp3',
+'Tacomendaciones/Nanna - Disaster Master.mp3',
+'Tacomendaciones/Nanna - Godzilla.mp3',
+'Tacomendaciones/Nanna - Igloo.mp3',
+'Tacomendaciones/Nanna - Milk.mp3',
+'Tacomendaciones/Never Shout Never - first dance.mp3',
+'Tacomendaciones/New Radicals - You Get What You Give.mp3',
+'Tacomendaciones/Ob-La-Di, Ob-La-Da.mp3',
+'Tacomendaciones/Of Monsters And Men - Love Love Love.mp3',
+'Tacomendaciones/One Love Bob Marley.mp3',
+  "Tacomendaciones/One Ok Rock - Notes'n'Words.mp3",
+'Tacomendaciones/Porter Robinson ft. Amy Millan - Divinity.mp3',
+'Tacomendaciones/Qué Puedo Decir.mp3',
+'Tacomendaciones/Queen - Dont Stop Me Now.mp3',
+'Tacomendaciones/Queen - Love Of My Life.mp3',
+'Tacomendaciones/RADWIMPS - Kaiko.mp3',
+'Tacomendaciones/RADWIMPS - MAKAFUKA.mp3',
+'Tacomendaciones/RADWIMPS Kanata Haruka.mp3',
+'Tacomendaciones/RADWIMPS Utakata uta.mp3',
+'Tacomendaciones/Rusted Rood - Send me on my way.mp3',
+'Tacomendaciones/Scene Eight The Spirit Carries On.mp3',
+'Tacomendaciones/Sie7e - Tengo tu love.mp3',
+'Tacomendaciones/Sigur Rós - Ára Bátur.mp3',
+'Tacomendaciones/Sigur Ros - Glósóli.mp3',
+'Tacomendaciones/Sigur Ros - Hoppipolla.mp3',
+'Tacomendaciones/Solaar Pleure.mp3',
+  "Tacomendaciones/Stayin' Alive.mp3",
+'Tacomendaciones/Sticks & Stones.mp3',
+'Tacomendaciones/Stir It Up.mp3',
+'Tacomendaciones/The Final Countdown.mp3',
+'Tacomendaciones/The Long And Winding Road.mp3',
+'Tacomendaciones/This Is Home.mp3',
+'Tacomendaciones/Tipling Rock - Love Without a Reason.mp3',
+'Tacomendaciones/To the sky.mp3',
+'Tacomendaciones/Toploader - Dancing in the Moonlight.mp3',
+'Tacomendaciones/Trusty and True.mp3',
+'Tacomendaciones/un palido punto azul - Carl Sagan.mp3',
+'Tacomendaciones/Untitled #3 - sigur ros.mp3',
+'Tacomendaciones/Untitled #4 (Njósnavélin).mp3',
+'Tacomendaciones/Ven a mi Inuyasha.mp3',
+'Tacomendaciones/Will You Be There.mp3',
+'Tacomendaciones/Zaz - Port Coton.mp3',
 ];
 
 let indiceActual = 0;
@@ -219,3 +218,13 @@ document.getElementById("siguiente").onclick = () => cargarCancion(indiceActual 
 
 // Iniciamos con la primera canción
 cargarCancion(indiceActual);
+
+
+const nombresLimpiados = canciones.map(c => c.split("Tacomendaciones/").pop().replace(".mp3",""));
+
+const datalist = document.getElementById("buscadorCancion");
+nombresLimpiados.forEach(nombre => {
+  const opcion = document.createElement("option");
+  opcion.value = nombre;
+  datalist.appendChild(opcion);
+});

@@ -2,7 +2,15 @@
   --color_letras: #
 }
 
+audio {
+  background-color: hotpink;
+  border-color: black;
+}
 
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
 
 * {
   font-family: 'Courier New', monospace;
@@ -118,4 +126,12 @@ iframe {
 
 #poemas {
   height: 35%;
+}
+
+#reproductor-contenedor {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  width: fit-content;
+  padding: 1cap;
 }

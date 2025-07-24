@@ -16,10 +16,16 @@
   <main>
     <div id="principal">
       <h1 id="titulo">✨Holi,Cati✨</h1>
-      <div>
-        <audio id="reproductor" controls> </audio>
-        <button id="anterior">Antes</button>
-        <button id="siguiente">Despues</button>
+      <div id="audio">
+        <div id="reproductor-contenedor">
+          <button id="anterior">A</button>
+          <audio id="reproductor" controls></audio>
+          <button id="siguiente">D</button>
+        </div>
+        <div id="buscador">
+          <input list="buscadorCancion" name="cancion" type="search" id="inputCancion" placeholder="Buscar canción." />
+          <datalist id="buscadorCancion"></datalist>
+        </div>
         <div id="botonera"></div>
       </div>
       <div class="seccion">
@@ -27,9 +33,14 @@
         <ul id="galeria"></ul>
       </div>
       <div id="poemas">
-        <input type="checkbox" id="Amanece" />
-        <input type="checkbox" id="Anochece" />
-
+        <div id="elegir_poema">
+          <label><input type="checkbox" class="cajas" id="duelo/amanece.html" /> Amanece </label>
+          <label><input type="checkbox" class="cajas" id="duelo/anochece.html" /> Anochece </label>
+          <label><input type="checkbox" class="cajas" id="Go_kitty.html" /> Go kitty </label>
+          <label><input type="checkbox" class="cajas" id="duelo/el_tren.html" /> El tren </label>
+          <label><input type="checkbox" class="cajas" id="duelo/notas/a_ti.html" /> A ti </label>
+          <label><input type="checkbox" class="cajas" id="duelo/notas/Gracias.html" /> Te pienso y te dejo ser.</label>
+        </div>
         <iframe id="poema" src="Go_kitty.html"></iframe>
       </div>
 
