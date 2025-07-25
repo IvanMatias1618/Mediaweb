@@ -7,6 +7,8 @@
   --hr_margin: 3em auto;
   --hr_height: 1px;
   --hr_background: linear-gradient(to right, #fefefe, #ffedcc, #fefefe);
+  --estrofa_font:'Quicksand', sans-serif;
+  --puente_font:'Inter', sans-serif;
 }
 
 :root.glitch {
@@ -224,7 +226,7 @@ main {
 }
 
 .estrofa {
-  font-family: 'Quicksand', sans-serif;
+  font-family: var(--estrofa_font);
   background-color: #fffdf7;
   color: #333;
   padding: 1em;
@@ -234,7 +236,7 @@ main {
 }
 
 .puente {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--puente_font);
   background: #fffbf2;
   color: #444;
   text-align: center;
