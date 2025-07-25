@@ -85,10 +85,15 @@ glitch.addEventListener('change', () => {
     agregarImagenes(imagenesGlitch);
     poemaIframe.src = "./duelo/amanece.html";
     document.documentElement.classList.add("glitch");
+    alert("Se reproducira sonido, \n No te espantes jj");
+    reproductor.src = "https://youtu.be/zzlpRARNW8s?si=MR_RraMcodqtCp78";
+    reproductor.play();
   } else {
     agregarImagenes(imagenes);
     poemaIframe.src = "./Go_kitty.html";
     document.documentElement.classList.remove("glitch");
+    reproductor.src = "https://youtu.be/iPyzNTAWl6k?si=_CD7SFpyhdik5YgD";
+    reproductor.play();
   }
 });
 
