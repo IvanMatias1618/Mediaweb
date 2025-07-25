@@ -9,6 +9,10 @@
   --hr_background: linear-gradient(to right, #fefefe, #ffedcc, #fefefe);
   --estrofa_font:'Quicksand', sans-serif;
   --puente_font:'Inter', sans-serif;
+  --estrofa_bg: #fffdf7;
+  --puente_bg: #fffbf2;
+  --puente_letras: #444;
+  --puente_sombra: none;
 }
 
 :root.glitch {
@@ -26,6 +30,14 @@
     #0ff 10px,
     #0ff 20px);
   --hr_animation: glitchy 1.5s infinite alternate;
+  --puente_font:'Orbitron', Sans-serif;
+  --estrofa_font: 'Courier New', monospace;
+  --estrofa_bg: linear-gradient(90deg, #f0f, #0ff, #ff0);
+  --puente_bg: #111;
+  --puente_letras: #fff;
+  --puente_sombra: inset 0 0 10px #f0f;
+  --estrofa_animacion: glitchColor 2s infinite alternate;
+  --estrofa_transformacion: skewX(-2deg);
 }
 
 hr {
@@ -202,33 +214,19 @@ main {
   padding: 1em;
 }
 
-.estrofa.glichi {
-  font-family: 'Courier New', monospace;
-  background: linear-gradient(90deg, #f0f, #0ff, #ff0);
-  background-size: 200% 200%;
-  animation: glitchColor 2s infinite alternate;
-  padding: 1em;
-  border-left: 5px dashed #000;
-  transform: skewX(-2deg);
-}
+
 @keyframes {
   0% {background-position: left;}
   100% {background-position: right;}
 }
-.puente.glichi{
-  font-family: 'Orbitron', Sans-serif;
-  color: #fff;
-  background-color: #111;
-  letter-spacing: 2px;
-  border-top: 2px dotted #0ff;
-  padding: 1.2em;
-  box-shadow: inset 0 0 10px #f0f;
-}
+
 
 .estrofa {
+  animation: var(--estrofa_animacion);
+  transform: var(--estrofa_transformacion);
   font-family: var(--estrofa_font);
-  background-color: #fffdf7;
-  color: #333;
+  background: var(--estrofa_bg);
+  color: var(--color_letras);
   padding: 1em;
   margin: 2em 0;
   border-left: 3px solid #ffd7f7;
@@ -237,12 +235,13 @@ main {
 
 .puente {
   font-family: var(--puente_font);
-  background: #fffbf2;
-  color: #444;
+  background: var(--puente_bg);
+  color: var(--puente_letras);
   text-align: center;
   font-style: italic;
   margin-top: 3em;
   padding: 1em, 2em;
   border-top: 1px solid #e0cfc0;
   border-bottom: 1px solid #e0cfc0;
+  box-shadow: var(--puente_sombra);
 }
