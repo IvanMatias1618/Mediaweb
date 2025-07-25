@@ -5,8 +5,8 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-  <link rel="stylesheet" href="estilos.css">
-  <script src="scripts/inicio.js" defer></script>
+  <link rel="stylesheet" href="./estilos.css">
+  <script src="./inicio.js" defer></script>
 
   <meta charset="UTF-8">
   <title>🌼 Bienvenida 🌼</title>
@@ -15,12 +15,12 @@
 <body>
   <main>
     <div id="principal">
-      <h1 id="titulo">✨Holi,Cati✨</h1>
+      <h1 id="titulo">✨🌼Holi,Cati🌼✨</h1>
       <div id="audio">
         <div id="reproductor-contenedor">
-          <button id="anterior">A</button>
+          <button id="anterior">⏭️</button>
           <audio id="reproductor" controls></audio>
-          <button id="siguiente">D</button>
+          <button id="siguiente">⏮️</button>
         </div>
         <div id="buscador">
           <input list="buscadorCancion" name="cancion" type="search" id="inputCancion" placeholder="Buscar canción." />
@@ -33,15 +33,19 @@
         <ul id="galeria"></ul>
       </div>
       <div id="poemas">
-        <div id="elegir_poema">
-          <label><input type="checkbox" class="cajas" id="duelo/amanece.html" /> Amanece </label>
-          <label><input type="checkbox" class="cajas" id="duelo/anochece.html" /> Anochece </label>
-          <label><input type="checkbox" class="cajas" id="Go_kitty.html" /> Go kitty </label>
-          <label><input type="checkbox" class="cajas" id="duelo/el_tren.html" /> El tren </label>
-          <label><input type="checkbox" class="cajas" id="duelo/notas/a_ti.html" /> A ti </label>
-          <label><input type="checkbox" class="cajas" id="duelo/notas/Gracias.html" /> Te pienso y te dejo ser.</label>
+        <div id=nombres_poemas>
+          <p>🌬️ Escritos:</p><input type="checkbox" id="mostrar_poemas" />
+          <div id="opciones_poemas">
+            <label><input type="checkbox" class="cajas" id="./duelo/amanece.html" />🌄 Amanece </label>
+            <label><input type="checkbox" class="cajas" id="./duelo/anochece.html" /> 🌅Anochece </label>
+            <label><input type="checkbox" class="cajas" id="./Go_kitty.html" />🐈 Go kitty </label>
+            <label><input type="checkbox" class="cajas" id="./duelo/el_tren.html" />🚝 El tren no se paró</label>
+            <label><input type="checkbox" class="cajas" id="./duelo/notas/a_ti.html" /> 🔮A ti </label>
+            <label><input type="checkbox" class="cajas" id="./duelo/notas/Gracias.html" /> 🌻Te pienso y te dejo
+              ser.</label>
+          </div>
         </div>
-        <iframe id="poema" src="Go_kitty.html"></iframe>
+        <iframe id="poema" src="./Go_kitty.html"></iframe>
       </div>
 
     </div>
