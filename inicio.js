@@ -1,5 +1,6 @@
 const poemaIframe = document.getElementById("poema");
 const cajas = document.querySelectorAll('.cajas');
+const secciones = document.querySelectorAll("section");
 
 cajas.forEach(caja => {
   caja.addEventListener('change', () => {
@@ -89,6 +90,16 @@ function activarMusicaDia() {
 
 // Cambio con glitch
 const glitch = document.getElementById("cambio");
+
+if (glitch.checked) {
+      secciones.forEach((seccion, index) => {
+      seccion.classList.add("glitch");
+    });
+} else {
+      secciones.forEach((seccion, index) => {
+      seccion.classList.remove("glitch");
+    });
+}
 
 glitch.addEventListener('change', () => {
   if (glitch.checked) {
