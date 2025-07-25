@@ -200,7 +200,7 @@ main {
   padding: 1em;
 }
 
-.glitch.estrofa {
+.estrofa.glichi {
   font-family: 'Courier New', monospace;
   background: linear-gradient(90deg, #f0f, #0ff, #ff0);
   background-size: 200% 200%;
@@ -213,7 +213,7 @@ main {
   0% {background-position: left;}
   100% {background-position: right;}
 }
-.glitch.puente{
+.puente.glichi{
   font-family: 'Orbitron', Sans-serif;
   color: #fff;
   background-color: #111;
