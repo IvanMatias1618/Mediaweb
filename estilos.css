@@ -2,7 +2,7 @@
   --color_letras: #111;
   --color_fondo: #fdf6e3;
   --color_h1: #FFA07A;
-  --font: Arial, Helvetica, sans-serif;
+  --font: 'Poppins', sans-serif;
   --reproductor: hotpink;
 }
 
@@ -15,7 +15,7 @@
 }
 
 h1 {
-  font-size: 1.5em;
+  font-size: 0.8em;
   font-family: var(--font);
   color: var(--color_h1);
 }
