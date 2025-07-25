@@ -1,12 +1,13 @@
 const poemaIframe = document.getElementById("poema");
 const cajas = document.querySelectorAll('.cajas');
-const secciones = document.querySelectorAll("section");
+
 
 cajas.forEach(caja => {
   caja.addEventListener('change', () => {
     if (caja.checked) {
       console.log(caja.id);
       poemaIframe.src =caja.id;
+      glitchear();
       cajas.forEach(other => {
         if (other !== caja) other.checked = false;
       });
@@ -90,23 +91,26 @@ function activarMusicaDia() {
 
 // Cambio con glitch
 const glitch = document.getElementById("cambio");
-
+function glitchear(){
 if (glitch.checked) {
-      secciones.forEach((seccion, index) => {
+  const secciones = document.querySelectorAll("section");
+  secciones.forEach((seccion, index) => {
       seccion.classList.add("glitch");
     });
 } else {
+  const secciones = document.querySelectorAll("section");
       secciones.forEach((seccion, index) => {
       seccion.classList.remove("glitch");
     });
 }
-
+}
 glitch.addEventListener('change', () => {
   if (glitch.checked) {
     agregarImagenes(imagenesGlitch);
     poemaIframe.src = "./duelo/amanece.html";
     document.documentElement.classList.add("glitch");
     activarMusicaGlitch();
+    glitchear();
     /*alert("Se reproducira sonido, \n No te espantes jj");
     reproductor.src = "";
     reproductor.play();*/
@@ -115,6 +119,7 @@ glitch.addEventListener('change', () => {
     poemaIframe.src = "./Go_kitty.html";
     document.documentElement.classList.remove("glitch");
     activarMusicaDia();
+    glitchear();
     /*reproductor.src = "https://youtu.be/iPyzNTAWl6k?si=_CD7SFpyhdik5YgD";
     reproductor.play();*/
   }
@@ -266,3 +271,4 @@ document.getElementById("inputCancion").addEventListener("change",e => {
   reproductor.src = ruta;
   reproductor.play();
 })
+glitchear();
