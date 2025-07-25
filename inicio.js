@@ -84,9 +84,11 @@ glitch.addEventListener('change', () => {
   if (glitch.checked) {
     agregarImagenes(imagenesGlitch);
     poemaIframe.src = "./duelo/amanece.html";
+    document.documentElement.classList.add("glitch");
   } else {
     agregarImagenes(imagenes);
     poemaIframe.src = "./Go_kitty.html";
+    document.documentElement.classList.remove("glitch");
   }
 });
 
