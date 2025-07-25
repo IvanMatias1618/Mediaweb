@@ -80,11 +80,11 @@ agregarImagenes(imagenes);
 const musica = document.getElementById("musica");
 
 function activarMusicaGlitch() {
-  musica.src= "https://youtu.be/HPf76nIOfww?si=Nyl70D5N3W_eJoob";
+  musica.src= "https://youtube.com/embed/HPf76nIOfww";
 }
 
 function activarMusicaDia() {
-  musica.src = "https://youtu.be/VjOzpG2M1CM?si=idZlgVDk48F5z4r0";
+  musica.src = "https://youtube.com/embed/VjOzpG2M1CM";
 }
 
 // Cambio con glitch
