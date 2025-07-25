@@ -95,12 +95,12 @@ function glitchear(){
 if (glitch.checked) {
   const secciones = document.querySelectorAll("section");
   secciones.forEach((seccion, index) => {
-      seccion.classList.add("glitch");
+      seccion.classList.add("glichi");
     });
 } else {
   const secciones = document.querySelectorAll("section");
       secciones.forEach((seccion, index) => {
-      seccion.classList.remove("glitch");
+      seccion.classList.remove("glichi");
     });
 }
 }
