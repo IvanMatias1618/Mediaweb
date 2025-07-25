@@ -1,11 +1,23 @@
 :root {
   --color_letras: #111;
+  --color_fondo: #fdf6e3;
+  --color_h1: #FFA07A;
+  --font: Arial, Helvetica, sans-serif;
+  --reproductor: hotpink;
+}
+
+:root.glitch {
+  --color_letras: #F7FF7A;
+  --color_h1: #CC99DD;
+  --color_fondo: #5A4667;
+  --font: 'IBM Plex Mono', monospace;
+  --reproductor: #D453B8;
 }
 
 h1 {
   font-size: 1.5em;
-  font-family: Arial, Helvetica, sans-serif;
-  color: gray;
+  font-family: var(--font);
+  color: var(--color_h1);
 }
 
 audio {
@@ -24,7 +36,7 @@ pre {
 }
 
 body {
-  background: #fdf6e3;
+  background: var(--color_fondo);
   padding: 1cap;
   height: 100vh;
 }
