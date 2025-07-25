@@ -200,3 +200,48 @@ iframe {
 #glitcher {
   padding: 1em;
 }
+
+.glitch .estrofa {
+  font-family: 'Courier New', monospace;
+  background: linear-gradient(90deg, #f0f, #0ff, #ff0);
+  background-size: 200% 200%;
+  animation: glitchColor 2s infinite alternate;
+  padding: 1em;
+  border-left: 5px dashed #000;
+  transform: skewX(-2deg);
+}
+@keyframes {
+  0% {background-position: left;}
+  100% {background-position: right;}
+}
+.glitch .puente{
+  font-family: 'Orbitron', Sans-serif;
+  color: #fff;
+  background-color: #111;
+  letter-spacing: 2px;
+  border-top: 2px dotted #0ff;
+  padding: 1.2em;
+  box-shadow: inset 0 0 10px #f0f;
+}
+
+.estrofa {
+  font-family: 'Quicksand', sans-serif;
+  background-color: #fffdf7;
+  color: #333;
+  padding: 1em;
+  margin: 2em 0;
+  border-left: 3px solid #ffd7f7;
+  font-size: 1.1em;
+}
+
+.puente {
+  font-family: 'Inter', sans-serif;
+  background: #fffbf2;
+  color: #444;
+  text-align: center;
+  font-style: italic;
+  margin-top: 3em;
+  padding: 1em, 2em;
+  border-top: 1px solid #e0cfc0;
+  border-bottom: 1px solid #e0cfc0;
+}
