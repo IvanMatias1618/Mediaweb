@@ -77,6 +77,16 @@ function agregarImagenes(lista) {
 // Carga inicial
 agregarImagenes(imagenes);
 
+const musica = document.getElementById("musica");
+
+function activarMusicaGlitch() {
+  musica.src= "https://youtu.be/HPf76nIOfww?si=Nyl70D5N3W_eJoob";
+}
+
+function activarMusicaDia() {
+  musica.src = "https://youtu.be/VjOzpG2M1CM?si=idZlgVDk48F5z4r0";
+}
+
 // Cambio con glitch
 const glitch = document.getElementById("cambio");
 
@@ -85,13 +95,15 @@ glitch.addEventListener('change', () => {
     agregarImagenes(imagenesGlitch);
     poemaIframe.src = "./duelo/amanece.html";
     document.documentElement.classList.add("glitch");
+    activarMusicaGlitch();
     /*alert("Se reproducira sonido, \n No te espantes jj");
-    reproductor.src = "https://youtu.be/zzlpRARNW8s?si=MR_RraMcodqtCp78";
+    reproductor.src = "";
     reproductor.play();*/
   } else {
     agregarImagenes(imagenes);
     poemaIframe.src = "./Go_kitty.html";
     document.documentElement.classList.remove("glitch");
+    activarMusicaDia();
     /*reproductor.src = "https://youtu.be/iPyzNTAWl6k?si=_CD7SFpyhdik5YgD";
     reproductor.play();*/
   }
