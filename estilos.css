@@ -192,8 +192,7 @@ main {
 #audio {
   width: 90vw;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
   padding: 0;
 }
 
