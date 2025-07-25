@@ -4,6 +4,9 @@
   --color_h1: #FFA07A;
   --font: 'Poppins', sans-serif;
   --reproductor: hotpink;
+  --hr_margin: 3em auto;
+  --hr_height: 1px;
+  --hr_background: linear-gradient(to right, #fefefe, #ffedcc, #fefefe);
 }
 
 :root.glitch {
@@ -12,6 +15,28 @@
   --color_fondo: #5A4667;
   --font: 'IBM Plex Mono', monospace;
   --reproductor: #D453B8;
+  --hr_margin: 3rem 0;
+  --hr_height: 3px;
+  --hr_background: repeating-linear-gradient(
+    45deg,
+    #f0f,
+    #f0f 10px,
+    #0ff 10px,
+    #0ff 20px);
+  --hr_animation: glitchy 1.5s infinite alternate;
+}
+
+hr {
+  margin: var(--hr_margin);
+  height: var(--hr_height);
+  background: var(--hr_background);
+  border: none;
+  animation: var(--hr_animation);
+}
+
+@keyframes glitchy {
+  from {transform: skewX(-3deg); }
+  to { transform: skewX(3deg) }
 }
 
 h1 {
