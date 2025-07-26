@@ -13,14 +13,14 @@
   --puente_bg: #fffbf2;
   --puente_letras: #444;
   --puente_sombra: none;
-  --titulo:  #FF64B7;
+  --titulo: #FBFF82;
 }
 
 :root.glitch {
-  --titulo: #FBFF82;
+  --titulo: #FF64B7;
   --color_letras: #F7FF7A;
   --color_h1: #CC99DD;
-  --color_fondo: #FFC8EC;
+  --color_fondo: #714D7B;
   --font: 'IBM Plex Mono', monospace;
   --reproductor: #D453B8;
   --hr_margin: 3rem 0;
