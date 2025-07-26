@@ -14,12 +14,12 @@
   --puente_bg: #fffbf2;
   --puente_letras: #444;
   --puente_sombra: none;
-  --titulo: #FBFF82;
+  --titulo: #D11295;
 }
 
 :root.glitch {
   --color_galeria: #4DBBA7;
-  --titulo: #FF64B7;
+  --titulo: #FBFF82;
   --color_letras: #F7FF7A;
   --color_h1: #CC99DD;
   --color_fondo: #714D7B;
