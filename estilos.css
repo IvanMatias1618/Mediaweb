@@ -1,6 +1,6 @@
 :root {
   --color_letras: #111;
-  --color_fondo: #FFC8EC;
+  --color_fondo: linear-gradient(to down, #FFC8EC, #FFB7B7);
   --color_h1: #FFA07A;
   --font: 'Poppins', sans-serif;
   --reproductor: hotpink;
@@ -13,14 +13,14 @@
   --puente_bg: #fffbf2;
   --puente_letras: #444;
   --puente_sombra: none;
-  --titulo: #FF64B7;
+  --titulo:  #FF64B7;
 }
 
 :root.glitch {
   --titulo: #FBFF82;
   --color_letras: #F7FF7A;
   --color_h1: #CC99DD;
-  --color_fondo: #5A4667;
+  --color_fondo: linear-gradient(to down, #FFC8EC, #E1B5FF);
   --font: 'IBM Plex Mono', monospace;
   --reproductor: #D453B8;
   --hr_margin: 3rem 0;
@@ -118,7 +118,7 @@ main {
   list-style: none;
   justify-content: flex-start;
   align-items: flex-start;
-  background-color: #A5F3B9;
+  background-color: #35BB7F;
   border-radius: 12px;
   box-shadow: 0 0 20px rgba(200, 160, 220, 0.2);
   overflow-x: scroll;
