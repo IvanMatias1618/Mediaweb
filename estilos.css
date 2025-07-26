@@ -1,6 +1,6 @@
 :root {
   --color_letras: #111;
-  --color_fondo: linear-gradient(to down, #FFC8EC, #FFB7B7);
+  --color_fondo: linear-gradient(to right, #FFC8EC, #FFB7B7);
   --color_h1: #FFA07A;
   --font: 'Poppins', sans-serif;
   --reproductor: hotpink;
@@ -20,7 +20,7 @@
   --titulo: #FBFF82;
   --color_letras: #F7FF7A;
   --color_h1: #CC99DD;
-  --color_fondo: linear-gradient(to down, #FFC8EC, #E1B5FF);
+  --color_fondo: linear-gradient(to down, #FFC8EC, #E1B5FF, #FFB7B7);
   --font: 'IBM Plex Mono', monospace;
   --reproductor: #D453B8;
   --hr_margin: 3rem 0;
