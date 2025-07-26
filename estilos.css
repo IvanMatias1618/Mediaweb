@@ -1,4 +1,5 @@
 :root {
+  --color_galeria: #AFE7CE;
   --color_letras: #111;
   --color_fondo: #FFC8EC;
   --color_h1: #FFA07A;
@@ -17,6 +18,7 @@
 }
 
 :root.glitch {
+  --color_galeria: #4DBBA7;
   --titulo: #FF64B7;
   --color_letras: #F7FF7A;
   --color_h1: #CC99DD;
@@ -118,7 +120,7 @@ main {
   list-style: none;
   justify-content: flex-start;
   align-items: flex-start;
-  background-color: #35BB7F;
+  background-color: var(--color_galeria);
   border-radius: 12px;
   box-shadow: 0 0 20px rgba(200, 160, 220, 0.2);
   overflow-x: scroll;
